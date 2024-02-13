@@ -68,7 +68,8 @@ export const register = async (formData) => {
         const newUser = new User({
             username,
             email,
-            password
+            password,
+            img
         });
 
         await newUser.save();
