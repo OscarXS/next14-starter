@@ -3,10 +3,11 @@ import styles from "./singlePost.module.css";
 import PostUser from "@/components/postUser/postUser";
 import { Suspense } from "react";
 import { getPost } from "@/lib/data";
+import { BASE_API_URL } from "@/lib/utils";
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
+  const res = await fetch(`${BASE_API_URL}/api/blog/${slug}`);
 
   if (!res.ok) {
     throw new Error("Something went wrong");
