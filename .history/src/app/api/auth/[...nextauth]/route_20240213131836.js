@@ -1,1 +1,0 @@
-export { GET, POST } from '@/authlib/auth'
