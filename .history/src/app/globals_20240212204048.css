@@ -1,0 +1,13 @@
+:root {
+    --bg: #0d0c22
+}
+
+body {
+    background-color: #111111;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
